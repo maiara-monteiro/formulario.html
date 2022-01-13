@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h>, initial-scale=1.0">
+    <title>Formulario de login</title>
+
+    <style>
+        .formlogin{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+        .formlogin fieldset{
+            background: rgb(177, 152, 160);
+        }
+        .formlogin legend{
+            background: rgb(214, 90, 129);
+            display: inline-block;
+            padding: 10px ;
+        }
+        .formlogin label{
+            margin-top: 15px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+        }
+        #user:focus , #pass:focus{
+            background: rgb(248, 246, 247);
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        #user{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="#" method="post" class="formlogin">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Usuario</label>
+            <input type="text" id="user" name="user" autofocus>
+
+            <label for="pass">Senha</label>
+            <input type="password" id="pass" name="pass">
+            <input type="submit" value="Entrar" class="btn">
+        </fieldset>
+    </form>
+</body>
+</html>
